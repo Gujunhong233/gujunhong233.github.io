@@ -397,6 +397,16 @@ li.categoryBar-list-item {
   font-size: 0em !important; /*评论二字*/
 }
 
+/*markdown*/
+[data-waline] a {
+  display: none !important;
+}
+
+/*GIF*/ 
+.wl-gif-popup.display {
+  display: none !important;
+}
+
 /*评论图标移动*/ 
 .comment-head .fa-comments:before {
   margin-left: 3px !important;
