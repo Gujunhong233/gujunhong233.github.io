@@ -444,7 +444,7 @@ li.categoryBar-list-item {
 /*分割线粗细*/
 hr {
     border: 0px dashed var(--hr-border);  /*分割线描边*/
-    border-bottom: 1px solid var(--light-grey);
+    border-bottom: 0px solid var(--light-grey);
   /*  border-bottom: 1px solid var(--light-grey);  分割线厚度*/
   /*  margin: 20px auto; 分割线边距*/
 }  
