@@ -1,0 +1,632 @@
+/*aplayer缩进*/
+.aplayer.aplayer-fixed.aplayer-narrow 
+  .aplayer-body{
+    left: -66px !important;
+    border-radius: 0 4px 4px 0 !important;
+  }
+  .aplayer-body:hover{
+    left: 0px !important;
+    border-radius: 0 4px 4px 0 !important;
+  }
+
+.aplayer.aplayer-fixed .aplayer-body {
+  border-radius: 0 4px 4px 0 !important;
+}
+
+/*aplayer颜色*/
+.aplayer.aplayer-fixed .aplayer-miniswitcher {
+  background: var(--btn-bg) !important;
+  border-radius: 0 3px 3px 0 !important;
+}
+
+.aplayer .aplayer-miniswitcher .aplayer-icon path {
+  fill: #fff !important;
+}
+
+/*aplayer颜色dark*/
+[data-theme="dark"]
+.aplayer.aplayer-fixed .aplayer-miniswitcher {
+  background: #1f1f1f !important;
+}
+
+[data-theme="dark"]
+.aplayer .aplayer-miniswitcher .aplayer-icon path {
+  fill: #fff !important;
+}
+
+/*aplayer适配夜间模式*/
+[data-theme="dark"]
+.aplayer {
+  filter: brightness(0.8) !important;
+}
+
+/*aplayer歌曲歌手字大小*/ 
+.aplayer .aplayer-info .aplayer-music .aplayer-title, .aplayer .aplayer-info .aplayer-music .aplayer-author {
+  font-size: 16px !important;
+}
+
+/*aplayer歌词对齐*/  
+.aplayer.aplayer-withlrc .aplayer-lrc {
+  margin-left: 4.7px !important;
+  height: 32px !important;
+}
+
+/*aplayer页面播放*/
+.aplayer .aplayer-list ol li {
+  border-top: 0px solid #fff !important;
+} /*底线*/
+
+.aplayer .aplayer-lrc:after, .aplayer .aplayer-lrc:before {
+  display: none !important;
+} /*歌词透明*/
+
+.aplayer .aplayer-body {
+  box-shadow: 0 1px 2px rgb(0 0 0 / 15%) !important;
+} /*播放器底边线*/
+
+.aplayer.aplayer-withlist .aplayer-info {
+  border-bottom: 0px solid #e9e9e9 !important;
+}
+
+#article-container .aplayer {
+  border-radius: 3px !important;
+  top: 4px !important;
+} /*播放器圆角*/
+
+.aplayer .aplayer-list ol li.aplayer-list-light .aplayer-list-cur {
+  display: none !important;
+}
+
+/*aplayer页面唱片图 */  
+.aplayer.aplayer-withlrc .aplayer-pic {
+  height: 82px !important;
+  width: 82px !important;
+  top: 4px !important;
+  left: 4px !important;
+  border-radius: 3px !important;
+}
+
+
+/*视频播放器边线*/ 
+iframe {
+  border: 2px solid #eee !important;
+}
+
+/*图片下说明文字居中*/
+.jg-caption{
+  text-align: center !important;
+}
+
+/*全局*/
+/* 页脚透明*/
+#footer{
+background: transparent!important;
+}
+
+/* 页脚黑色透明玻璃效果移除*/
+footer::before{
+  background: transparent!important;
+} 
+
+/* 头图透明
+#page-header{
+  background: transparent!important;
+} 
+
+/* 头图遮罩层透明
+#page-header::before{
+  background: transparent!important;
+} */
+
+/*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显
+#page-header.post-bg:before {
+  background-color: transparent!important;
+} */
+
+/*夜间模式伪类遮罩层透明*/
+[data-theme="dark"]
+  #footer::before{
+    background: transparent!important;
+  }
+/*
+[data-theme="dark"]
+  #page-header::before{
+    background: transparent!important;
+  }*/
+
+/*下滑图标
+i.fas.fa-angle-down.scroll-down-effects {
+    margin-bottom: 2em;
+}*/
+
+/*搜索图标*/
+.fa-magnifying-glass:before, .fa-search:before {
+  font-size: 1.2em;
+}
+
+#nav #search-button {
+  padding: 0 14px 0 0;
+}
+
+/*标题大小*/
+h2 {
+  font-size: 1.7em !important;
+}
+
+h3 {
+  font-size: 1.4em !important;
+}
+
+.post-reward .reward-button {
+  border-radius: 3px !important;
+}
+
+#pagination .page-number.current {
+  border-radius: 5px;
+}
+
+
+/*相关推荐边距*/ 
+.relatedPosts-list {
+  margin: -3px;
+}
+
+/*引用框*/
+blockquote {
+  color: var(--font-color); 
+  background-color: transparent;
+  margin: 0 0 20px 30PX;
+  padding: 12px 0 12px 15px;
+}
+
+/*手机端分类文章间隔*/
+@media screen and (max-width: 650px) {
+.article-sort-item {
+  margin: 0 0 35px 10px;
+  }
+}
+
+/*正文字体
+.post-content {
+  font-family: 'Noto Serif SC', -apple-system,BlinkMacSystemFont,Roboto,Segoe UI,Helvetica,Arial,serif !important;
+}
+#article-container code {
+  font-family: 'Noto Serif SC', -apple-system,BlinkMacSystemFont,Roboto,Segoe UI,Helvetica,Arial,serif !important;
+}
+
+
+/*网页背景
+body {
+  background: #eee;
+}
+
+/*网页背景夜间模式
+[data-theme="dark"]
+body {
+  background: var(--global-bg);
+}*/
+
+[data-theme="dark"]
+#page-header.not-top-img {
+  background: #eee;
+}
+  
+/*取消菜单栏透明
+#page-header.nav-fixed #nav {
+  background: rgba(255,255,255,1)!important;
+}
+
+[data-theme='dark'] #page-header.nav-fixed > #nav, [data-theme='dark'] #page-header.not-top-img > #nav {
+  background: rgba(18,18,18,1)!important;
+}
+
+/*推荐文章圆角
+.relatedPosts > .relatedPosts-list > div {
+  border-radius: 8px !important;}*/
+
+/*下一篇圆角
+nav#pagination.pagination-post {
+  border-radius: 8px !important;}*/  
+
+/*菜单栏红心*/
+.fa-heart:before {
+  color: red;
+}
+
+#nav .fa-thumbs-up:before  {
+  color: #9155ff;
+  font-size: 1.1em;
+}
+
+.menus_items .fa-thumbs-up:before  {
+  color: #9155ff;
+  font-size: 1.1em;
+}
+
+.fa-star:before {
+  color: #ffb10d;
+  font-size: 1.1em;
+}
+
+div#sidebar-menus .fa-star:before {
+  margin-left: -0.15em;
+}
+
+div#sidebar-menus .fa-user-group:before {
+  margin-left: -0.1em;
+}
+
+#nav #toggle-menu {
+  padding: 0px 0 0 6px;
+}
+
+li.categoryBar-list-item {
+  height: 80px !important;
+  padding: 11px 0 25px 25px !important;
+}
+
+@media screen and (max-width: 650px) {
+.categoryBar-list {
+  max-height: 94px;
+  }
+}
+
+a.categoryBar-list-link::before {
+  display:none !important;
+}
+
+li.categoryBar-list-item {
+  line-height: 1.6;
+}
+
+/*社交媒体换色*/
+/*.fa-weixin:before {
+  color: #7bc549} /*微信*/
+/*.fa-bilibili:before {
+  color: #f87098} /*哔哩哔哩*/
+/*.fa-qq:before {
+  color: #56b6e7} /*qq*/
+/*.card-info-social-icons.is-center .fa-envelope:before {
+  color: #ff8c00;} /*邮箱*/
+
+
+/*侧边栏*/
+/*侧边栏头像不转动*/
+/*.avatar-img img {
+  transition: filter 0ms ease-in 0s, transform 0s !important
+}
+#aside-content .card-info .card-info-social-icons i {
+  transition: all 0s !important
+}*/
+
+
+/*侧边栏下边距*/
+#aside-content .card-widget {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+/*侧边公告栏两端对齐*/
+#aside-content .card-widget {
+  text-align: justify;
+}
+
+/*侧边栏标题文字大小*/
+#aside-content .item-headline span {
+  font-size: 18px;
+}
+
+/*侧边栏用户页文字大小*/
+.site-data > a .headline {
+  font-size: 15px;
+}
+
+#aside-content .card-info #card-info-btn span { /*follow me*/
+  font-size: 15px;
+}
+
+/*最近文章标题字体加大*/
+#aside-content .aside-list > .aside-list-item .content > .title, #aside-content .aside-list > .aside-list-item .content > .comment {
+  font-size: 15px !important;
+  text-align: justify; /*两端对齐*/
+}
+
+/*最近文章边距左移*/
+#aside-content .aside-list > .aside-list-item .content {
+  padding-left: 0px !important;
+}
+
+/*文章*/
+/*文章正文大小*/
+#article-container p {
+  font-size: 16px;
+  text-align: justify; /*两端对齐*/
+}
+
+/*文章code文字大小*/
+#article-container code {
+  font-size: 16px;
+}
+
+/*文章序号文字大小*/
+#article-container ol li, #article-container ul li {
+  font-size: 16px;
+}
+
+/*.post-content */
+.post-content h2:before {
+  content: "# ";
+  color: #49b1f5; /*h2标题图标*/
+}
+
+/*.post-content */
+.post-content h3:before {
+  content: "## ";
+  color: #49b1f5; /*h3标题图标*/
+}
+
+#post .tag_share .post-meta__tags:before {
+    content: "# "; /*文章底部标签加图标*/
+}
+
+::marker { /*序号*/
+    font-size: 16px;
+    font-weight: bold;
+    Font-style: oblique;
+    color: #49b1f5;
+}
+
+.read-mode ::marker { /*序号*/
+  color: #4c4948;
+}
+
+/*引用框两端对齐*/  
+#article-container ol li, #article-container ul li {
+  text-align: justify !important;
+}
+
+
+/*Waline评论区和版权信息*/
+.wl-empty { 
+  font-size: 0em !important; /*快来评论吧*/
+}
+.wl-power {
+  font-size: 0em !important; /*版权*/
+}
+.wl-count {
+  font-size: 0em !important; /*评论二字*/
+}
+
+/*markdown*/
+[data-waline] a {
+  display: none !important;
+}
+
+/*GIF*/ 
+.wl-gif-popup.display {
+  display: none !important;
+}
+
+/*评论图标移动*/ 
+.comment-head .fa-comments:before {
+  margin-left: 3px !important;
+}
+
+
+/*移动端菜单栏动画*/
+#sidebar-menus.open > :nth-child(4) {
+  animation: sidebarItem 0s !important;
+}
+
+#sidebar-menus.open > :nth-child(2) {
+  animation: sidebarItem 0s !important;
+}
+
+/*移动端友链左移*/
+#article-container .flink .flink-list {
+  padding: 10px 40px 0 !important;
+}
+
+/*页脚颜色
+#footer {
+  background: #28292b !important;
+}*/
+
+#footer-wrap {
+  font-size: 13px !important;
+  color: var(--font-color);
+}/*页脚文字大小*/
+
+#footer-wrap a {
+  color: var(--font-color);
+}
+
+/*分割线粗细*/
+hr {
+    border: 0px dashed var(--hr-border);  /*分割线描边*/
+    border-bottom: 0px solid var(--light-grey);
+  /*  border-bottom: 1px solid var(--light-grey);  分割线厚度*/
+  /*  margin: 20px auto; 分割线边距*/
+}  
+
+/*文章标签&分享间隔*/
+#post .tag_share .post-meta__tag-list {
+  padding-top: 20px !important;
+} /*标签*/
+
+#post .tag_share .post_share {
+  padding-top: 20px !important;
+} /*分享*/
+
+/*文章打赏间隔*/
+.post-reward {
+  margin-top: 50px !important;
+}
+
+/*说说图标居中
+#artitalk_main svg {
+	vertical-align: middle !important;
+}
+
+/*去除说说动画
+#artitalk_main .cbp_tmlabel:hover {
+	transform: translateY(0px)!important;
+}
+
+/*说说对话框左拉
+#artitalk_main .cbp_tmtimeline>li .cbp_tmlabel {
+  margin: 0 15px 20px 15px !important;
+}
+
+/*说说头像缩小
+#artitalk_main .shuoshuo_author_img img {
+  display:none !important;
+}
+
+#artitalk_main .cbp_tmtimeline>li .cbp_tmlabel:after {
+  display:none !important; 
+}
+
+/*说说emoji对齐
+#artitalk_main img.atemoji {
+	vertical-align: top !important;
+}
+
+/*说说行间距
+#artitalk_main .cbp_tmtimeline>li .cbp_tmlabel {
+	line-height: 2 !important;
+}
+
+/*说说段后距
+#article-container ol p, #article-container ul p {
+  margin: 0 0 16px !important;
+  font-weight: normal !important;
+}
+
+/*说说分割线颜色
+#artitalk_main p.shuoshuo_time {
+	border-top: 1px dashed #232323 !important;
+}
+
+/*说说适配夜间模式
+[data-theme="dark"]
+#artitalk_main {
+  filter: brightness(0.8) !important;
+}
+
+/*说说power
+#artitalk_main .power {
+  font-size: 0em !important;
+}
+
+/*说说边距
+#artitalk_main #shuoshuo_content {
+  padding: 0px !important;
+}
+
+
+/* 哔哔主页相关
+a.categoryBar-list-link:hover:after {
+  width: 83%;
+  left: 0;
+}
+
+span.categoryBar-list-count {
+  font-size: 14px !important;
+  font-weight: normal;
+  padding-left: 2px;
+}
+
+span.categoryBar-list-count::before {
+  padding-right: 8px !important;
+}
+
+#bbTimeList {
+  margin-top: 0rem !important; 
+  width: 100% !important;  /* 框不全
+  align-items: center !important; /* 图标不居中 */ /* 其它方法#bbTimeList加一个声明justify-content: space-between;
+  height: 4rem !important;
+}
+
+#bbtalk {
+  width: 100% !important; /* 内容与图标不局中
+}
+
+/* 哔哔轮播框
+#bbTimeList {
+  border: 0px solid #9c9 !important;
+  box-shadow: var(--card-box-shadow) !important;
+  border-radius: 8px !important;
+}
+
+/* 哔哔图标颜色
+.fa-arrow-circle-right:before, .fa-circle-arrow-right:before {
+  color: #49b1f5 !important;  /* var(--btn-bg)
+  font-size: 20px !important;
+}
+
+/* 哔哔轮播正文字
+.swiper-backface-hidden .swiper-slide {
+  font-size: 16px !important;
+  text-align: left !important;
+  margin-left: 1.2rem !important;
+  padding-right: 1rem;
+}
+
+/* 哔哔框背景
+#bber > section > ul > div > li > div {
+  background: #eee !important;
+  margin-top: 20px !important;
+}
+
+/* 哔哔正文字
+#bber > section > ul > div > li > div .datacont{
+  color: #232323 !important;
+  font-size: 16px !important;
+  text-align: justify !important; /*两端对齐
+  font-weight: normal !important;
+}  
+
+/* 哔哔头像圆度
+.timeline ul li::before {
+  border-radius: 50px !important;
+} 
+
+.timeline ul li {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.timeline ul li::before {
+  left: -2rem !important;
+}
+
+/*哔哔适配夜间模式
+[data-theme="dark"]
+#bber {
+  filter: brightness(0.8) !important;
+}
+
+/*字体引用*/
+/*  @font-face {
+    font-family: 'SourceHanSansCN-Regular';
+    font-display: swap;
+    src: url('/butterflyChange/fonts/SourceHanSansCN-Regular.otf') format("truetype");
+  }
+
+  @font-face {
+    font-family: 'SourceHanSansCN-Medium';
+    font-display: swap;
+    src: url('/butterflyChange/fonts/SourceHanSansCN-Medium.otf') format("truetype");
+  }*/
+
+/*PDF夜间模式*/
+[data-theme="dark"]
+  embed {
+    filter: brightness(0.8) !important;
+}
+
+/*PDF字大小*/
+summary {
+  font-size: 16px;
+}
