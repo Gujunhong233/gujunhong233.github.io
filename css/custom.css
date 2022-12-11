@@ -630,3 +630,11 @@ span.categoryBar-list-count::before {
 summary {
   font-size: 16px;
 }
+
+:root {
+--btn-hover-color: #49b1f5 !important;
+}
+
+#nav {
+  transition: all 0s;
+}
