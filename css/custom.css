@@ -634,7 +634,3 @@ summary {
 :root {
 --btn-hover-color: #49b1f5 !important;
 }
-
-#nav {
-  transition: all 0s;
-}
